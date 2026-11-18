@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-AU" data-palette="vellum">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hale</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Hale: an evidence-graded guide for women aged 40 to 70 to building muscle and strength, training safely through menopause and beyond, and eating for muscle. Reviewed 17 November 2026.">
+<meta name="color-scheme" content="light dark">
+<!--HEAD-EXTRA-->
+<link rel="icon" href="__ICON__">
+<!--HEAD-SCRIPT-->
+<!--STYLE-->
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="top-in">
+    <button type="button" class="icon-btn" id="menuBtn" aria-label="Open sections menu" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    <a class="brand" href="#start" aria-label="Hale, home">
+      <svg class="mark" viewBox="0 0 72 64" aria-hidden="true" focusable="false"><defs><radialGradient id="hmB" cx=".36" cy=".34" r=".8"><stop offset="0" style="stop-color:var(--shine)"/><stop offset=".3" style="stop-color:var(--eosin);stop-opacity:.55"/><stop offset=".75" style="stop-color:var(--violet);stop-opacity:.85"/><stop offset="1" style="stop-color:var(--haem)"/></radialGradient><radialGradient id="hmG"><stop offset="0" style="stop-color:var(--eosin);stop-opacity:.42"/><stop offset=".55" style="stop-color:var(--violet);stop-opacity:.12"/><stop offset="1" style="stop-color:var(--violet);stop-opacity:0"/></radialGradient></defs><circle class="hm-glow" cx="38" cy="36" r="28" fill="url(#hmG)"/><path class="hm-handle" d="M25.5 28.5C22.5 12 30 6.5 38 6.5S53.5 12 50.5 28.5"/><path class="hm-handle2" d="M28.6 24C27.6 14.5 32 10.2 38 10.2"/><path class="hm-bell" d="M38 21.5C49.3 21.5 58 30.4 58 41.2C58 47 55.6 52 51.6 55.4L24.4 55.4C20.4 52 18 47 18 41.2C18 30.4 26.7 21.5 38 21.5Z" fill="url(#hmB)"/><path class="hm-fib" d="M22.5 37.5C30 33.2 46 33.2 53.5 37.5"/><path class="hm-fib" d="M21 44C29.5 39.5 46.5 39.5 55 44"/><path class="hm-fib" d="M23.5 50.3C31 46.6 45 46.6 52.5 50.3"/><rect class="hm-foot" x="24" y="54.6" width="28" height="3.2" rx="1.6"/><g><circle class="hm-spark" cx="9" cy="45" r="1.4"/><circle class="hm-spark" cx="6.5" cy="34" r="1.1"/><circle class="hm-spark" cx="10.5" cy="23" r="1.25"/></g></svg>
+      <span class="wm"><b>Hale</b><small>Strength for midlife and beyond</small></span>
+    </a>
+    <div class="search" id="searchBox" role="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <label class="sr-only" for="q">Search the guide</label>
+      <input id="q" type="search" placeholder="Search, e.g. protein, squat, bone" autocomplete="off" role="combobox" aria-autocomplete="list" aria-controls="qres" aria-expanded="false">
+      <div class="results" id="qres" role="listbox" aria-label="Search results" hidden></div>
+    </div>
+    <div class="tools">
+      <button type="button" class="icon-btn" id="searchToggle" aria-label="Open search" aria-controls="searchBox" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg></button>
+      <div class="studio-wrap">
+        <button type="button" class="icon-btn studio-btn" id="studioBtn" aria-haspopup="dialog" aria-expanded="false" aria-controls="studio" aria-label="Colours, theme, text size and motion" title="Colours and display"><svg class="pal-ring" viewBox="0 0 24 24" aria-hidden="true"><path class="r1" d="M12.784 4.541A7.5 7.5 0 0 1 18.852 15.051"/><path class="r2" d="M18.068 16.408A7.5 7.5 0 0 1 5.932 16.408"/><path class="r3" d="M5.148 15.051A7.5 7.5 0 0 1 11.216 4.541"/></svg></button>
+      </div>
+      <a class="safe-pill" href="#safe" aria-label="Starting safely: check-in and when to stop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Safety<span class="lbl-long"> first</span></span></a>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"><span id="readProg"></span></div>
+</header>
+
+<div class="shell">
+  <aside class="rail" aria-label="Sections">
+    <div class="explored" id="explored"><svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="exGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--haem)"/><stop offset="1" style="stop-color:var(--eosin)"/></linearGradient></defs><circle class="trk" cx="20" cy="20" r="16"/><circle class="val" id="exVal" cx="20" cy="20" r="16"/></svg><div><b id="exTxt">Explored 1 of 15</b><small>Sections opened on this device</small></div></div>
+    <nav aria-label="Sections"><ol class="thread" id="thread"></ol></nav>
+    <p class="rail-note">Reviewed 17 November 2026. General information only. If you have a health condition, check with your doctor before you start.</p>
+  </aside>
+
+  <main id="main" tabindex="-1">
+<!--VIEWS-->
+  </main>
+</div>
+
+<footer class="foot">
+  <div class="foot-in">
+    <p><strong>Hale</strong> · Information current to 17 November 2026. General information only: it does not replace advice from your doctor, physiotherapist, exercise physiologist or dietitian.</p>
+    <p>Written in Australian English for readers everywhere. Services follow <a href="#support">where you live</a>. The fonts are open-licence and built in, so nothing loads from other websites, and everything you enter stays on this device.</p>
+    <p>Evidence labels: Strong, Moderate, Weak, Not supported. See the <a href="#evidence">Evidence library</a> for sources, the people studied and links to PubMed.</p>
+  </div>
+</footer>
+
+<div class="studio" id="studio" role="dialog" aria-label="Colours and display" hidden>
+  <h5>Colour palette</h5>
+  <div class="pals" id="pals" role="radiogroup" aria-label="Colour palette"></div>
+  <h5>Appearance</h5>
+  <div class="seg" role="group" aria-label="Appearance"><button type="button" data-themeset="auto" aria-pressed="false">Auto</button><button type="button" data-themeset="light" aria-pressed="false">Light</button><button type="button" data-themeset="dark" aria-pressed="false">Dark</button></div>
+  <h5>Text size</h5>
+  <div class="seg" role="group" aria-label="Text size"><button type="button" data-sizeset="" aria-pressed="false">Standard</button><button type="button" data-sizeset="l" aria-pressed="false">Large</button><button type="button" data-sizeset="xl" aria-pressed="false">Larger</button></div>
+  <h5>Motion</h5>
+  <div class="seg" role="group" aria-label="Motion"><button type="button" data-motionset="flow" aria-pressed="false">Flowing</button><button type="button" data-motionset="still" aria-pressed="false">Still</button></div>
+  <p class="st-note">Your choices stay on this device. Motion also stops if your device is set to reduce it.</p>
+</div>
+<div class="pop" id="pop" role="dialog" aria-modal="false" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<dialog id="navDlg" aria-label="Sections">
+  <div class="dlg-head"><div><p class="eyebrow">Hale</p><h2>Sections</h2><button type="button" class="btn sm" data-open-studio style="align-self:flex-start">Colours and display</button></div><button type="button" class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="dlg-body"><ol class="thread" id="threadM"></ol></div>
+</dialog>
+
+<dialog id="exDlg" aria-labelledby="exDlgTitle">
+  <div class="dlg-head"><div><p class="eyebrow" id="exDlgEyebrow"></p><h2 id="exDlgTitle"></h2><div class="tags" id="exDlgTags"></div></div><button type="button" class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div class="dlg-body" id="exDlgBody"></div>
+</dialog>
+<!--SCRIPT-->
+</body>
+</html>

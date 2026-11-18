@@ -1,0 +1,69 @@
+<!-- PROTEIN -->
+<section class="view" id="v-protein" data-view="protein" aria-labelledby="h-protein">
+  <div class="vhead">
+    <p class="eyebrow">Eat</p>
+    <h2 id="h-protein">Protein</h2>
+    <p class="lead">Training tells muscle to grow; protein supplies the building blocks. Older muscles need a bit more protein at a time to respond fully, so how you spread it across the day matters too.</p>
+  </div>
+
+  <section class="stack" aria-labelledby="h-howmuch">
+    <h3 id="h-howmuch">How much a day?</h3>
+    <div class="tbl-wrap"><table>
+      <thead><tr><th scope="col">Advice</th><th scope="col">Amount</th><th scope="col">Who it's for</th></tr></thead>
+      <tbody>
+        <tr><td>Australian <button class="t" data-t="rdi">recommended dietary intake</button> <span class="ev" data-r="NRV"></span></td><td class="num">46 g a day (19 to 70)<br>57 g a day (over 70)</td><td>Enough for most healthy people. Not set with building muscle in mind.</td></tr>
+        <tr><td>PROT-AGE and ESPEN expert groups <span class="ev" data-g="mod" data-r="PROTAGE ESPEN"></span></td><td class="num">1.0 to 1.2 g per kg<br>1.2 g per kg or more if active</td><td>Older adults, to keep muscle and function. More (1.2 to 1.5 g per kg) during illness, except severe kidney disease.</td></tr>
+        <tr><td>Trials of training plus protein <span class="ev" data-g="mod" data-r="MORTON"></span></td><td class="num">Benefit levelled off at about 1.6 g per kg</td><td>Adults doing resistance training; extra protein added a little strength and lean mass, less in older people.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small muted">For a 70 kg woman, 1.2 g per kg is 84 g of protein a day: nearly twice the recommended dietary intake of 46 g.</p>
+  </section>
+
+  <div class="tool" id="pp">
+    <h3>Protein planner</h3>
+    <p class="why">Work out a daily target and a target for each meal, then see how a typical day measures up. Use the "Protein" line on food labels, in grams per serve, to fill in your meals. Your entries stay on this device.</p>
+    <div class="form-grid">
+      <label class="fld" for="ppKg">Your weight (kg)<input type="number" inputmode="decimal" id="ppKg" min="35" max="200" step="0.5" placeholder="e.g. 68"></label>
+      <div class="fld"><span id="ppGoalL">Daily target</span><div class="chips" role="radiogroup" aria-labelledby="ppGoalL" id="ppGoal"><button type="button" class="chip" role="radio" data-v="1.0">1.0 g/kg</button><button type="button" class="chip" role="radio" data-v="1.2">1.2 g/kg</button><button type="button" class="chip" role="radio" data-v="1.4">1.4 g/kg</button><button type="button" class="chip" role="radio" data-v="1.6">1.6 g/kg</button></div></div>
+    </div>
+    <div class="pp-res" id="ppRes" aria-live="polite"></div>
+    <fieldset class="pp-meals"><legend>A typical day: protein in each meal (grams)</legend>
+      <div class="form-grid four">
+        <label class="fld">Breakfast<input type="number" inputmode="numeric" min="0" max="200" data-meal="b" placeholder="0"></label>
+        <label class="fld">Lunch<input type="number" inputmode="numeric" min="0" max="200" data-meal="l" placeholder="0"></label>
+        <label class="fld">Dinner<input type="number" inputmode="numeric" min="0" max="200" data-meal="d" placeholder="0"></label>
+        <label class="fld">Snacks<input type="number" inputmode="numeric" min="0" max="200" data-meal="s" placeholder="0"></label>
+      </div>
+    </fieldset>
+    <div class="svg-box chart-box"><div class="chart-head"><p class="chart-title">Protein at each meal</p><button type="button" class="mini" data-table-for="chMeals" aria-pressed="false">Show table</button></div><div class="chart" id="chMeals" data-chart="meals"></div></div>
+    <p class="small" id="ppSay" aria-live="polite"></p>
+  </div>
+
+  <section class="stack" aria-labelledby="h-spread">
+    <h3 id="h-spread">Spread it across your meals</h3>
+    <ul class="ticks">
+      <li>In laboratory studies, healthy men around 71 needed about 0.4 g of protein per kg of body weight in a single meal to switch on <button class="t" data-t="mps">muscle protein synthesis</button> fully, compared with 0.24 g per kg in men around 22. For a 70 kg woman, 0.4 g per kg is about 28 g. Women weren't studied. <span class="ev" data-g="weak" data-r="MOORE"></span></li>
+      <li>In a small study, eating about 30 g of protein at each of three meals gave 25% more muscle protein synthesis over the day than the same total eaten mostly at dinner. <span class="ev" data-g="weak" data-r="MAMEROW"></span></li>
+      <li>If most of your protein comes at dinner, adding a protein food to breakfast is often the easiest change to make.</li>
+      <li>Eating protein right before or after a workout made no difference once total daily protein was taken into account. Hitting your daily total matters more than timing. <span class="ev" data-g="no" data-r="TIMING"></span></li>
+    </ul>
+  </section>
+
+  <section class="stack" aria-labelledby="h-quality">
+    <h3 id="h-quality">Which protein?</h3>
+    <ul class="ticks">
+      <li><strong>Leucine-rich foods help.</strong> In 22 women aged about 69, a small dose of milk protein with added <button class="t" data-t="leucine">leucine</button> built muscle protein as well as a larger dose of whey. Dairy, meat, fish, eggs and soy are good sources. <span class="ev" data-g="weak" data-r="LEUCINE"></span></li>
+      <li><strong>Plant protein works too.</strong> Soy and animal protein supplements gave similar gains in strength and lean mass with resistance training. <span class="ev" data-g="mod" data-r="SOY"></span> If you eat mostly plants, combine legumes, soy foods, nuts and seeds across the day.</li>
+      <li><strong>Higher protein is kind to healthy kidneys.</strong> Diets with 1.5 g per kg a day or more didn't harm kidney function in adults without kidney disease. If you have kidney disease, ask your doctor or dietitian first. <span class="ev" data-g="mod" data-r="KIDNEY"></span></li>
+    </ul>
+  </section>
+
+  <section class="stack" aria-labelledby="h-serves">
+    <h3 id="h-serves">What a standard serve looks like</h3>
+    <p>The Australian Dietary Guidelines define one serve of lean meat, fish, eggs, tofu, nuts, seeds or legumes as any of these: <span class="ev" data-r="SERVES"></span></p>
+    <div class="serves">
+      <span>65 g cooked lean red meat</span><span>80 g cooked chicken or turkey</span><span>100 g cooked fish, or a small can</span><span>2 large eggs</span><span>1 cup (150 g) cooked lentils, chickpeas or beans</span><span>170 g tofu</span><span>30 g nuts or seeds</span>
+    </div>
+    <p class="small muted">Milk, yoghurt and cheese are a separate food group and add protein too. Protein per serve varies between foods and brands, so check the nutrition panel when you can.</p>
+  </section>
+</section>

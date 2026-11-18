@@ -1,0 +1,51 @@
+<!-- EVIDENCE -->
+<section class="view wide" id="v-evidence" data-view="evidence" aria-labelledby="h-evidence">
+  <div class="vhead">
+    <p class="eyebrow">Check and support</p>
+    <h2 id="h-evidence">Evidence library</h2>
+    <p class="lead">Every claim in Hale links to its sources. Here is how they were chosen and graded, what the evidence does not support, and the full list with the people each study included.</p>
+  </div>
+
+  <section class="stack" aria-labelledby="h-grades">
+    <h3 id="h-grades">How claims are graded</h3>
+    <div class="grades">
+      <div><span class="g g-strong">Strong</span><p>Consistent results from several good randomised trials, or a high-quality systematic review or <button class="t" data-t="meta">meta-analysis</button> of them.</p></div>
+      <div><span class="g g-mod">Moderate</span><p>Good evidence with some limits: fewer or smaller trials, mixed results, or large <button class="t" data-t="cohort">cohort studies</button> that show links rather than cause and effect.</p></div>
+      <div><span class="g g-weak">Weak</span><p>Early evidence: a single trial, small or short studies, laboratory measures, or studies in a different group (for example, men only).</p></div>
+      <div><span class="g g-no">Not supported</span><p>Tested, and not shown to help: either it didn't work, or the evidence was too uncertain to say it does.</p></div>
+    </div>
+    <p class="small muted">Some sources, such as national guidelines, definitions and screening tools, carry no grade of their own: they are cited for what they recommend or define. Practical advice that rests on professional agreement rather than trials is labelled <span class="cn">clinical consensus</span>.</p>
+  </section>
+
+  <section class="stack" aria-labelledby="h-method">
+    <h3 id="h-method">How sources were chosen and checked</h3>
+    <ul class="ticks">
+      <li>Systematic reviews, meta-analyses and randomised trials were preferred, then large cohort studies, then smaller trials where nothing better exists.</li>
+      <li>Each journal source was checked on PubMed on 17 November 2026, and its PMID and DOI link to the record. Numbers in the text were checked against each study's abstract.</li>
+      <li>The people studied are listed with every source. Many studies included men or younger adults; where that matters, the text says so.</li>
+      <li>Guidelines and service details were checked on the same date, using official websites and documents wherever they could be reached.</li>
+    </ul>
+  </section>
+
+  <section class="stack" aria-labelledby="h-notsup">
+    <h3 id="h-notsup">What the evidence doesn't support</h3>
+    <ul class="ticks">
+      <li>Menopausal hormone therapy to build or keep muscle mass. <span class="ev" data-g="no" data-r="HTMASS"></span></li>
+      <li>Exercise in general as a proven treatment for hot flushes, although strength training looks promising. <span class="ev" data-g="no" data-r="DALEY"></span></li>
+      <li>Timing protein around workouts, once daily total protein is enough. <span class="ev" data-g="no" data-r="TIMING"></span></li>
+      <li>Vitamin D supplements to prevent falls or fractures, or to build muscle mass. <span class="ev" data-g="no" data-r="VITD_BONE VITD_MUSCLE"></span></li>
+      <li>Creatine to improve bone density. <span class="ev" data-g="no" data-r="CR_BONE2Y CR_BONE"></span></li>
+      <li>Resistance training on its own, walking or dance as proven ways to prevent falls: balance and functional exercise are what reduce falls. <span class="ev" data-g="no" data-r="FALLS"></span></li>
+      <li>The idea that women must train only with light weights, or that heavy lifting causes prolapse. <span class="ev" data-r="LOADS PROLAPSE LIFTMOR"></span></li>
+    </ul>
+  </section>
+
+  <section class="stack" aria-labelledby="h-lib">
+    <h3 id="h-lib">All sources</h3>
+    <div class="chips" id="refTopics" role="group" aria-label="Filter by topic"></div>
+    <label class="sr-only" for="refQ">Search sources</label>
+    <input type="search" id="refQ" placeholder="Search sources, e.g. creatine, SWAN, falls" autocomplete="off">
+    <p class="small muted" id="refCount" aria-live="polite"></p>
+    <div class="refs" id="refList"></div>
+  </section>
+</section>

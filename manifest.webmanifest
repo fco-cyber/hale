@@ -1,0 +1,31 @@
+{
+  "id": "./",
+  "name": "Hale: strength for midlife and beyond",
+  "short_name": "Hale",
+  "description": "An evidence-graded guide for women aged 40 to 70 to building muscle and strength, training safely through menopause and beyond, and eating for muscle. Works without internet once installed.",
+  "lang": "en-AU",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#F6F1E7",
+  "theme_color": "#F6F1E7",
+  "categories": ["health", "fitness", "education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "My programme and session log", "short_name": "Programme", "url": "./#plan", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Exercise library", "short_name": "Exercises", "url": "./#moves", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Self-checks", "short_name": "Self-checks", "url": "./#tests", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] },
+    { "name": "Protein planner", "short_name": "Protein", "url": "./#protein", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ],
+  "screenshots": [
+    { "src": "screenshots/wide-start.jpg", "sizes": "1280x800", "type": "image/jpeg", "form_factor": "wide", "label": "The Hale start page" },
+    { "src": "screenshots/narrow-start.jpg", "sizes": "780x1688", "type": "image/jpeg", "form_factor": "narrow", "label": "Hale on a phone" },
+    { "src": "screenshots/narrow-library.jpg", "sizes": "780x1688", "type": "image/jpeg", "form_factor": "narrow", "label": "An exercise with its moving figure and muscle map" }
+  ]
+}

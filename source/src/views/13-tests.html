@@ -1,0 +1,67 @@
+<!-- TESTS -->
+<section class="view" id="v-tests" data-view="tests" aria-labelledby="h-tests">
+  <div class="vhead">
+    <p class="eyebrow">Check and support</p>
+    <h2 id="h-tests">Self-checks</h2>
+    <p class="lead">Simple tests that clinicians use to check leg strength, grip and the risk of sarcopenia. Repeat them every couple of months to see your training at work. Results are saved on this device only.</p>
+  </div>
+
+  <div class="note urgent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg><p><strong>Before you test:</strong> use a sturdy chair without wheels, pushed against a wall. Stop if you feel pain, dizziness or chest discomfort. If you've been told not to exercise, or you answered yes in the <a href="#safe">check-in</a>, ask your doctor first.</p></div>
+
+  <div class="tool-tabs" role="tablist" aria-label="Self-checks">
+    <button type="button" class="tool-tab" role="tab" id="tt-chair" aria-controls="tp-chair" aria-selected="true">30-second chair stand</button>
+    <button type="button" class="tool-tab" role="tab" id="tt-five" aria-controls="tp-five" aria-selected="false" tabindex="-1">Five chair rises</button>
+    <button type="button" class="tool-tab" role="tab" id="tt-grip" aria-controls="tp-grip" aria-selected="false" tabindex="-1">Grip strength</button>
+    <button type="button" class="tool-tab" role="tab" id="tt-sarcf" aria-controls="tp-sarcf" aria-selected="false" tabindex="-1">SARC-F</button>
+  </div>
+
+  <div class="tool" role="tabpanel" id="tp-chair" aria-labelledby="tt-chair">
+    <h3>30-second chair stand</h3>
+    <p class="why">Counts how many times you can stand up fully and sit back down in 30 seconds. It is a reliable measure of leg strength, and scores fall with age and with inactivity. <span class="ev" data-r="CHAIR STEADI"></span></p>
+    <ol class="steps sm">
+      <li>Sit in the middle of a chair with a seat about 43 cm (17 inches) high, back straight, feet flat and hip-width apart.</li>
+      <li>Cross your arms over your chest.</li>
+      <li>When the timer says go, stand all the way up, then sit all the way down. Repeat as many times as you can until it says stop.</li>
+      <li>Count each full stand. If you're more than halfway up when time runs out, it counts. If you need your arms to stand, stop: note it, and talk to your doctor or physiotherapist.</li>
+    </ol>
+    <div class="timer" id="csTimer">
+      <div class="t-face" aria-hidden="true"><svg viewBox="0 0 120 120"><circle class="t-trk" cx="60" cy="60" r="52"/><circle class="t-val" id="csRing" cx="60" cy="60" r="52"/></svg><span class="t-num" id="csNum">30</span></div>
+      <p class="t-msg" id="csMsg" aria-live="assertive">Ready when you are.</p>
+      <div class="row"><button type="button" class="btn primary" id="csGo">Start the timer</button><button type="button" class="btn" id="csTap" disabled>Helper: count a stand <span class="tap-n" id="csTapN">0</span></button></div>
+      <p class="small muted">The timer counts down from 3, then runs for 30 seconds, with a beep at the start and end if your device allows sound. A helper can tap to count for you.</p>
+    </div>
+    <div class="form-grid">
+      <label class="fld" for="csCount">Number of full stands<input type="number" inputmode="numeric" id="csCount" min="0" max="60" placeholder="e.g. 12"></label>
+      <label class="fld" for="csAge">Your age<select id="csAge"><option value="">Choose</option><option value="u60">Under 60</option><option value="60">60 to 64</option><option value="65">65 to 69</option><option value="70">70 to 74</option><option value="75">75 to 79</option><option value="80">80 to 84</option><option value="85">85 to 89</option><option value="90">90 to 94</option></select></label>
+    </div>
+    <div class="out" id="csOut" aria-live="polite"></div>
+    <div class="row"><button type="button" class="btn sm" id="csSave">Save this result</button></div>
+    <div class="stack" id="csHist">
+      <div class="chart-head"><h4>Your chair-stand results</h4><button type="button" class="mini" data-table-for="chChair" aria-pressed="false">Show table</button></div>
+      <div class="svg-box chart-box"><div class="chart" id="chChair" data-chart="chair"></div></div>
+      <ol class="sessions" id="csList"></ol>
+    </div>
+  </div>
+
+  <div class="tool" role="tabpanel" id="tp-five" aria-labelledby="tt-five" hidden>
+    <h3>Five chair rises</h3>
+    <p class="why">Time how long it takes to stand up and sit down five times as fast as you safely can, arms crossed. Taking more than 15 seconds is one of the European cut-offs for low strength. <span class="ev" data-r="EWGSOP2"></span></p>
+    <div class="timer"><p class="t-big" id="fsTime" aria-live="polite">0.0 s</p><div class="row"><button type="button" class="btn primary" id="fsGo">Start</button><button type="button" class="btn" id="fsReset">Reset</button></div></div>
+    <div class="out" id="fsOut" aria-live="polite"></div>
+  </div>
+
+  <div class="tool" role="tabpanel" id="tp-grip" aria-labelledby="tt-grip" hidden>
+    <h3>Grip strength</h3>
+    <p class="why">Grip is measured with a hand dynamometer, which many physiotherapists, exercise physiologists and GPs have. Enter your best result in kilograms. <span class="ev" data-r="EWGSOP2 GRIP"></span></p>
+    <div class="form-grid"><label class="fld" for="grKg">Best grip (kg)<input type="number" inputmode="decimal" id="grKg" min="0" max="80" step="0.5" placeholder="e.g. 24"></label></div>
+    <div class="grip-bar" id="grBar" aria-hidden="true"></div>
+    <div class="out" id="grOut" aria-live="polite"></div>
+  </div>
+
+  <div class="tool" role="tabpanel" id="tp-sarcf" aria-labelledby="tt-sarcf" hidden>
+    <h3>SARC-F questionnaire</h3>
+    <p class="why">Five questions used worldwide to find people who may have sarcopenia. A score of 4 or more means it's worth asking your doctor about a proper assessment. <span class="ev" data-r="SARCF EWGSOP2"></span> Nothing you answer here is saved.</p>
+    <ol class="qz" id="sfQs"></ol>
+    <div class="out" id="sfOut" aria-live="polite"></div>
+  </div>
+</section>

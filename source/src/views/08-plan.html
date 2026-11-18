@@ -1,0 +1,39 @@
+<!-- PLAN -->
+<section class="view wide" id="v-plan" data-view="plan" aria-labelledby="h-plan">
+  <div class="vhead">
+    <p class="eyebrow">Train</p>
+    <h2 id="h-plan">My programme</h2>
+    <p class="lead">Answer three questions for a full-body plan you can do two or three days a week, then log your sessions and watch your strength climb. Everything stays on this device.</p>
+  </div>
+
+  <div class="tool" id="builder">
+    <h3>Build your plan</h3>
+    <div class="pb-q"><p class="pb-l" id="pbExpL">How much strength training have you done?</p><div class="chips" role="radiogroup" aria-labelledby="pbExpL" data-pb="exp"><button type="button" class="chip" role="radio" data-v="new">New to it</button><button type="button" class="chip" role="radio" data-v="back">Some, or returning</button><button type="button" class="chip" role="radio" data-v="reg">I train regularly</button></div></div>
+    <div class="pb-q"><p class="pb-l" id="pbDaysL">How many days a week?</p><div class="chips" role="radiogroup" aria-labelledby="pbDaysL" data-pb="days"><button type="button" class="chip" role="radio" data-v="2">2 days</button><button type="button" class="chip" role="radio" data-v="3">3 days</button></div></div>
+    <div class="pb-q"><p class="pb-l" id="pbEqL">Where will you train?</p><div class="chips" role="radiogroup" aria-labelledby="pbEqL" data-pb="eq"><button type="button" class="chip" role="radio" data-v="body">Home: body weight and bands</button><button type="button" class="chip" role="radio" data-v="db">Home: with dumbbells</button><button type="button" class="chip" role="radio" data-v="gym">At a gym</button></div></div>
+    <fieldset class="pb-q"><legend class="pb-l">Anything to plan around? <span class="muted">(optional)</span></legend>
+      <div class="checks two-col">
+        <label class="check"><input type="checkbox" data-pbc="knee"><span>Knee or hip pain, or osteoarthritis</span></label>
+        <label class="check"><input type="checkbox" data-pbc="bone"><span>Osteopenia or osteoporosis</span></label>
+        <label class="check"><input type="checkbox" data-pbc="pf"><span>Leaking, or pelvic floor symptoms</span></label>
+        <label class="check"><input type="checkbox" data-pbc="shoulder"><span>Shoulder pain</span></label>
+        <label class="check"><input type="checkbox" data-pbc="back"><span>Low back pain</span></label>
+      </div>
+    </fieldset>
+    <div id="pbOut" class="pb-out" aria-live="polite"></div>
+  </div>
+
+  <div class="tool" id="logger">
+    <div class="log-head"><h3>Log a session</h3><div class="week" id="weekPips" aria-live="polite"></div></div>
+    <p class="why">Pick the day you trained, enter the weight and repetitions for each set, and save. For body-weight exercises, leave the weight at 0.</p>
+    <div id="logForm"></div>
+    <div class="stack" id="logHistWrap">
+      <h4>Your progress</h4>
+      <div class="row"><label class="fld inline" for="progEx">Exercise</label><select id="progEx"></select><button type="button" class="mini" data-table-for="chProg" aria-pressed="false">Show table</button></div>
+      <div class="svg-box chart-box"><div class="chart" id="chProg" data-chart="prog"></div></div>
+      <p class="small muted" id="progNote"></p>
+      <h4>Recent sessions</h4>
+      <ol class="sessions" id="sessList"></ol>
+    </div>
+  </div>
+</section>
